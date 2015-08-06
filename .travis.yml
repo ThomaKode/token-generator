@@ -13,6 +13,7 @@ env:
     - secure: JxtW7U0QHXHPIgyScKRQDq7g/xCWUt/4/cgj98Zp0KPO/Y3YkK6CjfTCtu0zLpEGTbDpTJC47HQIIyiKksFUc1NZlfQbLo3WJQLqe+7Hel1xsOGUKpgnf0it5s6p6g3Az1yfxiopMU+w3plgcYEboTuqokXpZyZ/Q8XPOEg1GhHBSIdbXaqcATgwAEbCU2lSsUxrNhgLXNKxrwiCZfk/lHOms0n5nxV7ueXUGiZNafzzsNYBOJmlQmohSWnZFptYzJuBn7XDDJfNkutMXid6Geyf9AETFrMP4QbG/gc8sk3gdWCaQ8QuBs/G9S1VK2DqDgO/Nd7l0ppi1eL7UsY+jYhYHRZVYwBFPrkMMgHnRaI1wZ3UQTRmxi1EHsYwKF8io6cYruAH/UVLQsX5B+b/SXoAPmbM4FNmG8Z+3KFwATyCCCM5mHJXUjAwOXXxmMamSFKNvvPkEUbZQSgffXP3UUUkZNC3/5GX7Ea+d1FdEfBSUndTExZoijWrI3edKfHKViHRDCioXsCD3rM9HvCZoB3C6PkxriNd9T/NqiZIUdRYHHk/n4tfXgRug+QWNpmNI4ZUEfk6kfaGWk3/vr5nLngU+rBcmuGR/1uy3+ZMSV+DyMHnCEAAskLahe7zYtutkny9Bc2ahTHyXL5/zGFrS78E+Agi+yR9EeJ9AKEBJDk=
     - secure: e8KKnwHKktpLmF1rY9lDOjMHpeaHTLxJkKMKb5bopRe1A24r+IjRyPhL9i3ia7spqj4LVO7bi8jw9uXk0lAVwNgbpNkkeMNjYAsPKxjmG6sxv1RgYtcuZmRUCrL3FpBxSzgy/tA4vVORLGKpLc5OCqilRzQN3HUV2W/s2BrpWsziMlc2Wec/HIS/RkHfBO/G4JLG3AF5ch7MtF7CPBSdvfpTzoPSx6iF9dZtTwJ/PbeFN2ymARoxhZ9VDViCl2PkNGGt4TaGasPhBJkbHlKby7yFdLbiH5rfNGofc8cSw0RhyL10bBQaFvMUhWJ5C/6I3SpKJVeBo2KzRbGgJF8aoEUiJMYE6cqGCqjYmVg+BLiek9d5A/407hKeOF9sGC6xp/F2dhfB2v9lIsG+fb6Bu0DrGHCbz9lYYneEzeVcgqIqort01lv9idn4tjd/928iY1yZXvVe7/1Er0fFjq3HmHB3QxMgyBftP1dttSsbDmx15709McX+n+IBGCMIw3ss5hwEnflrsaBz1YV0OV76Pp2mb/xjsFR3rKCh/e0n/C/VRhBtzbYBt+sbnN8fZeyjx9h5HUaH5kEjyIKbtBaWXGTNPclptOnsZNJs4JzDGokMVmNODwwS/zJvIRhPOtYJQoevA8bsdqhMG6xJp4723ZR/UvqREO37qKcEX96w/ig=
 before_install:
+  - git submodule update --init
   - sudo apt-get update -qq
   - sudo apt-get upgrade -qq
   - sudo apt-get install -qq bundler, ruby, node, npm
@@ -20,7 +21,9 @@ install:
   - "pip install ."
   - pip install -q Django==$DJANGO_VERSION
   - python token-generate.py -q install
-script: make build
+script:
+  - make build
+  - bundle exec rake build && bundle exec rake builddoc
 branches:
   only:
     - legacy
@@ -30,5 +33,8 @@ branches:
 deploy:
         skip_cleanup: true
 addons:
+  hosts:
+    - travis.dev
+    - saucelabs.com
   sauce_connect: true
 end
