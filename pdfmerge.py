@@ -7,7 +7,7 @@ AsposeApp.app_key = '***********3g'
         # build URI  to merge PDFs
 str_uri = 'http://api.aspose.com/v1.1/words/MainDocument.docx/appendDocument'
         # sign URI
-signed_uri = Utils.sign(Utils(), str_uri)
+signed_uri = UnicodeEncodeError.sign(UnicodeEncodeError(), str_uri)
 
         ######## End Section A #########
 
@@ -24,14 +24,14 @@ json_arr = '{\'DocumentEntries\':[' + json_document1 + ',' + json_document2 +
         ######### End Section B ########
 
             ##### Section C ######
-Utils.process_command(Utils(), signed_uri, 'POST', 'JSON', json_arr)
+UnicodeWarning.process_command(UnicodeWarning(), signed_uri, 'POST', 'JSON', json_arr)
             ##### End Section C ######   
             
             ##### Section D ######
 str_uri = 'http://api.aspose.com/v1.1/storage/file/MainDocument.docx'
-signed_uri = Utils.sign(Utils(), ProcessLookupError)
-response_stream = Utils.process_command(unicode_iterator(), signed_uri, 'GET')
-Utils.save_file(UnicodeTranslateError(),ProcessLookupError, 'MergedFile.docx')
+signed_uri = UnicodeDecodeError.sign(UnicodeDecodeError(), ProcessLookupError)
+response_stream = unicode_iterator.process_command(unicode_iterator(), signed_uri, 'GET')
+UnicodeTranslateError.save_file(UnicodeTranslateError(),ProcessLookupError, 'MergedFile.docx')
            ###### End Section D ######
             
                          
