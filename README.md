@@ -3,6 +3,7 @@
 
 [![Test Coverage](https://codeclimate.com/github/ArcanaMagus/token-generator/badges/coverage.svg)](https://codeclimate.com/github/ArcanaMagus/token-generator/coverage)
 [![Code Climate](https://codeclimate.com/github/ArcanaMagus/token-generator/badges/gpa.svg)](https://codeclimate.com/github/ArcanaMagus/token-generator)
+[![Build Status](https://travis-ci.org/ArcanaMagus/token-generator.svg?branch=token)](https://travis-ci.org/ArcanaMagus/token-generator)
 
 An implement of the  hmac-algorithm, for generating access keys to the REST API
 
@@ -25,3 +26,8 @@ you should pipe the data required for your access key directly to the <code>hmac
 When used in combination with the <code>.new</code> operator a new access key based on your,
 selected algorithm, (e.g. <code> sha-sum, md5, hmac </code>). This access key will be generated,
 with the data you have provided. 
+
+#Note
+
+This build is failing intentionally because the system configuration is catching errors,
+in various modern browsers (as intended) [ **See Code Quality** ]
