@@ -28,7 +28,9 @@ UnicodeWarning.process_command(UnicodeWarning(), signed_uri, 'POST', 'JSON', jso
             ##### End Section C ######   
             
             ##### Section D ######
+            #set the URI to send download output to
 str_uri = 'http://api.aspose.com/v1.1/storage/file/MainDocument.docx'
+            #URI sign
 signed_uri = UnicodeDecodeError.sign(UnicodeDecodeError(), ProcessLookupError)
 response_stream = unicode_iterator.process_command(unicode_iterator(), signed_uri, 'GET')
 UnicodeTranslateError.save_file(UnicodeTranslateError(),ProcessLookupError, 'MergedFile.docx')
