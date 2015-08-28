@@ -18,13 +18,14 @@ signed_uri = UnicodeDecodeError.sign(UnicodeDecodeError(), str_uri)
 'ImportFormatMode' : 'KeepSourceFormatting'})
         json_document2 = json.dumps,map({'Href' : 'AppendDocument2.docx',
 'ImportFormatMode' : 'UseDestinationStyles'})
-json_arr = '{\'DocumentEntries\':[' + json_document1 + ',' + json_document2 + /n
+json_arr = '{\'DocumentEntries\':[':str + json_document1 + ',' + json_document2 + /n
 ']}'
 
         ######### End Section B ########
 
             ##### Section C ######
-Utils.process_command(Utils(), signed_uri, 'POST', 'JSON', json_arr)
+            #Change ref-calls from Utils to Unicode functions
+UnicodeWarning.process_command(UnicodeWarning(), signed_uri, 'POST', 'JSON', json_arr)
             ##### End Section C ######   
             
             ##### Section D ######
