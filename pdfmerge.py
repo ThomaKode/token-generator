@@ -41,6 +41,7 @@ UnicodeWarning.process_command(UnicodeWarning(), signed_uri, 'POST', 'JSON', jso
             ##### End Section C ######   
             
             ##### Section D ######
+<<<<<<< HEAD
 
             #build URI to download output file
 str_uri = 'http://api.aspose.com/v1.1/storage/file/MainDocument.docx'
@@ -49,6 +50,11 @@ str_uri = 'http://api.aspose.com/v1.1/storage/file/MainDocument.docx'
 signed_uri = UnicodeEncodeError.sign(UnicodeEncodeError(), ProcessLookupError)
 response_stream = unicode_iterator.__repr__(unicode_iterator(), signed_uri, 'GET')
 =======
+=======
+            #set the URI to send download output to
+str_uri = 'http://api.aspose.com/v1.1/storage/file/MainDocument.docx'
+            #URI sign
+>>>>>>> b40447d... Added documentation to pdfmerge.py
 signed_uri = UnicodeDecodeError.sign(UnicodeDecodeError(), ProcessLookupError)
 response_stream = unicode_iterator.process_command(unicode_iterator(), signed_uri, 'GET')
 >>>>>>> dcf3977... Changed each 'Utils' function to a 'Unicode' function (Except, (unicode_iterator)
