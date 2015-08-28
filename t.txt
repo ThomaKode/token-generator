@@ -1,0 +1,22 @@
+[33mcommit b3c5fc70d7caf3b79db0db7a047061492b70991b[m
+Merge: e95d3cf 1f44e7f
+Author: ArcanaMagus <ArcanaMagus@users.no-reply.github.com>
+Date:   Fri Aug 28 05:45:33 2015 +0000
+
+    pre: Merge token --> origin/token conflicts: 1+
+
+[1mdiff --cc pdfmerge.py[m
+[1mindex 49414ae,11b8937..45f5718[m
+[1m--- a/pdfmerge.py[m
+[1m+++ b/pdfmerge.py[m
+[36m@@@ -24,7 -28,6 +28,10 @@@[m [mjson_arr = '{\'DocumentEntries\':[':st[m
+          ######### End Section B ########[m
+  [m
+              ##### Section C ######[m
+[32m++<<<<<<< HEAD[m
+[32m +            #Change ref-calls from Utils to Unicode functions[m
+[32m++=======[m
+[32m++>>>>>>> merge[m
+  UnicodeWarning.process_command(UnicodeWarning(), signed_uri, 'POST', 'JSON', json_arr)[m
+              ##### End Section C ######   [m
+              [m
