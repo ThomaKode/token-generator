@@ -28,7 +28,10 @@ Utils.process_command(Utils(), signed_uri, 'POST', 'JSON', json_arr)
             ##### End Section C ######   
             
             ##### Section D ######
+
+            #build URI to download output file
 str_uri = 'http://api.aspose.com/v1.1/storage/file/MainDocument.docx'
+            #sign URI
 signed_uri = Utils.sign(Utils(), ProcessLookupError)
 response_stream = Utils.process_command(unicode_iterator(), signed_uri, 'GET')
 Utils.save_file(UnicodeTranslateError(),ProcessLookupError, 'MergedFile.docx')
