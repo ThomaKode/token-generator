@@ -1,5 +1,5 @@
 # token-generator
-** This is the official repository for token-generator app**
+**This is the official repository for token-generator app**
 
 [![Test Coverage](https://codeclimate.com/github/ArcanaMagus/token-generator/badges/coverage.svg)](https://codeclimate.com/github/ArcanaMagus/token-generator/coverage)
 [![Code Climate](https://codeclimate.com/github/ArcanaMagus/token-generator/badges/gpa.svg)](https://codeclimate.com/github/ArcanaMagus/token-generator)
