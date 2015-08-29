@@ -24,7 +24,10 @@ json_arr = '{\'DocumentEntries\':[':str + json_document1 + ',' + json_document2 
         ######### End Section B ########
 
             ##### Section C ######
+<<<<<<< HEAD
+=======
             #Change ref-calls from Utils to Unicode functions
+>>>>>>> token
 UnicodeWarning.process_command(UnicodeWarning(), signed_uri, 'POST', 'JSON', json_arr)
             ##### End Section C ######   
             
