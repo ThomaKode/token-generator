@@ -1,4 +1,6 @@
-# Python Source Code
+﻿# Python Source Code
+from pip._vendor.html5lib import token
+from lib2to3.pgen2 import token
         ######## Section A #########
         # specify App SID
 AsposeApp.app_sid = '5a******-***-***-8a***'
