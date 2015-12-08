@@ -1,0 +1,15 @@
+[1mdiff --cc pdfmerge.py[m
+[1mindex 49414ae,11b8937..0000000[m
+[1m--- a/pdfmerge.py[m
+[1m+++ b/pdfmerge.py[m
+[36m@@@ -24,7 -28,6 +28,10 @@@[m [mjson_arr = '{\'DocumentEntries\':[':st[m
+          ######### End Section B ########[m
+  [m
+              ##### Section C ######[m
+[32m++<<<<<<< HEAD[m
+[32m +            #Change ref-calls from Utils to Unicode functions[m
+[32m++=======[m
+[32m++>>>>>>> merge[m
+  UnicodeWarning.process_command(UnicodeWarning(), signed_uri, 'POST', 'JSON', json_arr)[m
+              ##### End Section C ######   [m
+              [m

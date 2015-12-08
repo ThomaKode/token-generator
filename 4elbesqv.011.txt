@@ -1,0 +1,16 @@
+﻿Rebased pdfmerge.py
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# rebase in progress; onto 9bdcd31
+# You are currently editing a commit while rebasing branch 'token' on '9bdcd31'.
+#
+# Changes to be committed:
+#	modified:   pdfmerge.py
+#
+# Untracked files:
+#	logfileA.txt
+#	logfileB.txt
+#
+
+Amended commits
