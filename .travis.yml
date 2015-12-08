@@ -27,10 +27,11 @@ script:
   - bundle exec rake build && bundle exec rake builddoc
 branches:
   only:
-    - legacy
-    - experimental
+    - sieve
+    - token
     - master
     - /*token-.*$/
+    - master
 deploy:
         skip_cleanup: true
 addons:
