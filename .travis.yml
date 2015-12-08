@@ -30,8 +30,8 @@ branches:
     - sieve
     - token
     - master
-    - /*token-.*$/
-    - master
+    - merge
+    - REST-API
 deploy:
         skip_cleanup: true
 addons:
