@@ -1,0 +1,10 @@
+##The token-generator repo uses the following
+##packages as requirements for proper function.
+##
+##If the project dependencies are not met
+##The application will not operate correctly.
+##
+##When tested on CI platforms rake is run
+##Automatically, so include:
+ - 'rake', '~>1.0'
+ - 'bundler', '~2.2.1'

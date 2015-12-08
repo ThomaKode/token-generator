@@ -4,6 +4,9 @@
 [![Test Coverage](https://codeclimate.com/github/ArcanaMagus/token-generator/badges/coverage.svg)](https://codeclimate.com/github/ArcanaMagus/token-generator/coverage)
 [![Code Climate](https://codeclimate.com/github/ArcanaMagus/token-generator/badges/gpa.svg)](https://codeclimate.com/github/ArcanaMagus/token-generator)
 [![Build Status](https://travis-ci.org/ArcanaMagus/token-generator.svg?branch=token)](https://travis-ci.org/ArcanaMagus/token-generator)
+[![Coverage Status](https://coveralls.io/repos/ArcanaMagus/token-generator/badge.svg?branch=token&service=github)](https://coveralls.io/github/ArcanaMagus/token-generator?branch=token)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)]
+(https://github.com/ArcanaMagus/Malware/blob/Malware/LICENSE)
 
 An implement of the  hmac-algorithm, for generating access keys to the REST API
 
