@@ -8,8 +8,11 @@ class MessageBox():
 #---pre: encode values
     def name(a): 
        a = hmac.new("evilbillionaire:006da874-4268-4a07-940f-58e06ee36aa2",
-         "ad5540553b02489586ae7ebbbd2562a8", md5).hexdigest()
-         
+         "ad5540553b02489586ae7ebbbd2562a8", md5).hexdigest()       # For python.version >= 3.4 md5 hash algorith  is not supported.
+# If using python.vesion < 3.4.1 && python.version > 2.7.11 Use the md5 hash algorithm
+# While using python.vesion > 2.7.11 && python.version != 3.4.x && python.version <= 3.5.x
+
+pip install token-generator travis_$VERSION=5.7.1
     print ('The value of x*a {}.'.format(math.fsum))
 
     def name(b):
