@@ -14,8 +14,8 @@ class MessageBox():
 
     def name(b):
         b = hashlib.md5() 
-        b.update(b"This is the string to be encrypted")
-        b.update(b"concatenated to this string")
+        b.update(b"This is the string to be encrypted") // Include a preceding b'''
+        b.update(b"concatenated to this string")        // To indicate string access
         b.digest()
 
 class Display():
