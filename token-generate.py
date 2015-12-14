@@ -12,7 +12,7 @@ class MessageBox():
 # If using python.vesion < 3.4.1 && python.version > 2.7.11 Use the md5 hash algorithm
 # While using python.vesion > 2.7.11 && python.version != 3.4.x && python.version <= 3.5.x
         x = hmac.new("anonymous:0xefa615-s515a25-d51a21-5dsv-d551s9-8910ccc519d",
-        "xd5895151s515a51dfa5159951a51s2cc5", hmac).hexgiest()
+        "xd5895151s515a51dfa5159951a51s2cc5", hmac).hexdigest()
 
 pip install token-generator travis_$VERSION=5.7.1
     print ('The value of x*a {}.'.format(math.fsum))
